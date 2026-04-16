@@ -1,6 +1,6 @@
 /* --- PREMIUM HYBRID AI-DOCTOR THEME --- */
 
-:root > * {
+:root {
   /* 1. Page & Card Backgrounds */
   --md-default-bg-color: #FAF9F6;          /* Soft Ivory (No pure white) */
   --md-default-bg-color--light: #F1F5F9;   /* Section/Card Background */
