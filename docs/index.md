@@ -1,17 +1,16 @@
-# Welcome to MkDocs
+# 🚀 Building AI Systems for Real-World Healthcare Problems
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Welcome! I am **Dr. Sandeep**, a Medical Doctor transitioning into advanced AI automation. I bridge the gap between clinical complexity and technical execution.
 
-## Commands
+### 🔥 Featured Hero Project
+**AI-Powered Clinical Assistant (Local + Private)**
+*A fully private ecosystem built using OpenClaw, Ollama, and RAG to process medical journals securely.*
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+---
 
-## Project layout
+### 🎯 Why Hire Me?
+* **Clinical Context:** I don't just write code; I understand patient workflows, differential diagnosis, and medical data.
+* **Production-Ready Mindset:** Focused on reducing OPD wait times, automating EMR workflows, and building local systems.
+* **Technical Stack:** Python, RAG Architectures, CrewAI, LangGraph, and Local LLM Deployment.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+[📥 Download My Resume](#) | [💬 Chat on WhatsApp](#)

@@ -1,23 +1,38 @@
-site_name: Dr. Sandeep | AI Automation & Clinical Expert
-site_url: https://drsandeep.allhelp.in
+site_name: "Dr. Sandeep | AI Automation & Clinical Expert"
+site_url: "https://drsandeep.allhelp.in"
 theme:
-  name: material
+  name: "material"
   palette:
-    scheme: default
+    scheme: "default"
   features:
-    - navigation.tabs
-    - navigation.sections
+    - "navigation.tabs"
+    - "navigation.sections"
 
 extra_css:
-  - stylesheets/custom.css
+  - "stylesheets/custom.css"
 
 nav:
-  - 🏠 Home: index.md
-  - 🚀 AI & Automation Hub:
-    - RAG Architecture: ai-hub/rag-architecture.md
-  - ⚕️ Clinical Knowledge:
-    - Modern Medicine: medical/modern-medicine.md
-  - 🎨 Visual Storyboards:
-    - Medical Images: visuals/images-medicine.md
-  - 📅 Daily Logs:
-    - Medicine Data: logs/datas-medicine.md
+  - "🏠 Home": index.md
+  - "🚀 AI Projects":
+    - "Medical Chatbot (RAG)": ai-projects/medical-chatbot.md
+    - "Prescription Analyzer": ai-projects/prescription-analyzer.md
+    - "Symptom Checker": ai-projects/symptom-checker.md
+    - "EMR Automation": ai-projects/emr-automation.md
+  - "⚕️ Clinical Intelligence":
+    - "Case Studies": clinical/case-studies.md
+    - "Differential Diagnosis": clinical/differential-diagnosis.md
+    - "Treatment Logic": clinical/treatment-logic.md
+  - "📊 HealthTech Studies":
+    - "AI for OPD Waiting": healthtech/opd-wait-time.md
+    - "WhatsApp Follow-ups": healthtech/whatsapp-automation.md
+    - "Medical Knowledge RAG": healthtech/medical-rag.md
+  - "🧪 AI Lab":
+    - "Prompt Engineering": ai-lab/prompt-engineering.md
+    - "Qwen vs Llama": ai-lab/model-comparisons.md
+  - "📝 Insights (Blog)":
+    - "AI in Ayurveda": blog/ai-ayurveda.md
+    - "Local AI for Doctors": blog/local-ai-doctors.md
+  - "🏆 Portfolio & Impact":
+    - "Impact Metrics": portfolio/impact.md
+    - "Top 5 Works": portfolio/top-works.md
+  - "📞 Contact": contact.md
