@@ -1,0 +1,56 @@
+/* --- PREMIUM HYBRID AI-DOCTOR THEME --- */
+
+:root > * {
+  /* 1. Page & Card Backgrounds */
+  --md-default-bg-color: #FAF9F6;          /* Soft Ivory (No pure white) */
+  --md-default-bg-color--light: #F1F5F9;   /* Section/Card Background */
+  
+  /* 2. Primary Text Colors */
+  --md-text-color: #1E293B;                /* Deep Charcoal Text */
+  --md-default-fg-color: #1E293B;
+  --md-typeset-color: #1E293B;
+
+  /* 3. Header Bar (Midnight Navy) */
+  --md-primary-fg-color: #0B132B;          /* Dark Background for Header */
+  --md-primary-bg-color: #F8FAFC;          /* Light Text on Dark Header */
+
+  /* 4. CTA Buttons & Links (Electric Cyan) */
+  --md-accent-fg-color: #00E5FF;           /* High Visibility CTA */
+  --md-typeset-a-color: #00E5FF;           /* Hyperlink Color */
+
+  /* 5. Highlight & Alerts (Luxury Gold) */
+  --md-admonition-fg-color: #D4AF37;
+  --md-typeset-mark-color: rgba(212, 175, 55, 0.3); /* Soft Gold highlight for text */
+}
+
+/* --- STRICT CUSTOM RULES --- */
+
+/* Force Headings to be Midnight Navy */
+.md-typeset h1, 
+.md-typeset h2, 
+.md-typeset h3, 
+.md-typeset h4, 
+.md-typeset h5, 
+.md-typeset h6 {
+  color: #0B132B !important;
+  font-weight: 700;
+}
+
+/* Sidebar Active Link (Luxury Gold Accent) */
+.md-nav__link--active {
+  color: #D4AF37 !important;
+  font-weight: 700;
+}
+
+/* Customizing Buttons for that Tech feel */
+.md-button {
+  background-color: #0B132B !important;
+  color: #00E5FF !important;
+  border: 1px solid #00E5FF !important;
+  transition: all 0.3s ease;
+}
+
+.md-button:hover {
+  background-color: #00E5FF !important;
+  color: #0B132B !important;
+}

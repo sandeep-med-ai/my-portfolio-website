@@ -3,12 +3,13 @@ site_url: https://drsandeep.allhelp.in
 theme:
   name: material
   palette:
-    scheme: slate
-    primary: teal
-    accent: cyan
+    scheme: default
   features:
     - navigation.tabs
     - navigation.sections
+
+extra_css:
+  - stylesheets/custom.css
 
 nav:
   - 🏠 Home: index.md
