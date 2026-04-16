@@ -1,0 +1,22 @@
+site_name: Dr. Sandeep | AI Automation & Clinical Expert
+site_url: https://drsandeep.allhelp.in
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: teal
+    accent: cyan
+  features:
+    - navigation.tabs
+    - navigation.sections
+
+nav:
+  - 🏠 Home: index.md
+  - 🚀 AI & Automation Hub:
+    - RAG Architecture: ai-hub/rag-architecture.md
+  - ⚕️ Clinical Knowledge:
+    - Modern Medicine: medical/modern-medicine.md
+  - 🎨 Visual Storyboards:
+    - Medical Images: visuals/images-medicine.md
+  - 📅 Daily Logs:
+    - Medicine Data: logs/datas-medicine.md
