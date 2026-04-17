@@ -31,7 +31,7 @@ nav:
     - "Qwen vs Llama": ai-lab/model-comparisons.md
   - "📝 Insights (Blog)":
     - "1st Blog": Insights/1st blog.md
-    - "The Clinical Reality": Insights/the-clinical-reality.md
+     - "The Clinical Reality": Insights/the-clinical-reality.md
   - "🏆 Portfolio & Impact":
     - "Impact Metrics": portfolio/impact.md
     - "Top 5 Works": portfolio/top-works.md
