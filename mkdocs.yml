@@ -32,6 +32,8 @@ nav:
   - "📝 Insights (Blog)":
     - "AI in Ayurveda": blog/ai-ayurveda.md
     - "Local AI for Doctors": blog/local-ai-doctors.md
+    - "1st Blog": Insights/1st blog.md
+    - "The Clinical Reality": Insights/the-clinical-reality.md
   - "🏆 Portfolio & Impact":
     - "Impact Metrics": portfolio/impact.md
     - "Top 5 Works": portfolio/top-works.md
