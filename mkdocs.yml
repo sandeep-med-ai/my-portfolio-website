@@ -29,7 +29,7 @@ nav:
   - "🧪 AI Lab":
     - "Prompt Engineering": ai-lab/prompt-engineering.md
     - "Qwen vs Llama": ai-lab/model-comparisons.md
-  - - "📝 Insights (Blog)":
+  - "📝 Insights (Blog)":
     - "1st Blog": Insights/1st blog.md
     - "The Clinical Reality": Insights/the-clinical-reality.md
   - "🏆 Portfolio & Impact":
