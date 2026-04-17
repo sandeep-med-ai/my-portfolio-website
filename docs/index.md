@@ -1,36 +1,46 @@
+---
+hide:
+  - navigation
+  - toc
+---
 <style>
+  /* --- OVERRIDE MKDOCS NARROW WIDTH --- */
+  .md-grid {
+    max-width: 1200px !important; /* Forces the container to be wide */
+  }
+
   /* --- STRICT PREMIUM BRAND SYSTEM --- */
   .portfolio-container {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    color: #1E293B; /* Primary text */
-    background-color: #FAF9F6; /* Soft ivory bg */
+    color: #1E293B; 
+    background-color: #FAF9F6; 
     line-height: 1.6;
-    padding: 1rem;
+    padding: 1rem 0;
   }
 
   /* Hero Section */
   .hero-section {
-    background-color: #0B132B; /* Midnight navy */
-    color: #F8FAFC; /* Light text on dark */
-    padding: 3.5rem 2rem;
+    background-color: #0B132B; 
+    color: #F8FAFC; 
+    padding: 4rem 2rem;
     border-radius: 12px;
     text-align: center;
     margin-bottom: 2.5rem;
-    box-shadow: 0 10px 30px rgba(11, 19, 43, 0.15); /* Shadow using Navy */
-    border-bottom: 4px solid #D4AF37; /* Luxury gold accent */
+    box-shadow: 0 10px 30px rgba(11, 19, 43, 0.15); 
+    border-bottom: 4px solid #D4AF37; 
   }
 
   .hero-section h1 {
     color: #F8FAFC !important;
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     margin-bottom: 0.5rem;
     font-weight: 800;
     letter-spacing: -0.5px;
   }
 
   .hero-section h2 {
-    color: #00E5FF !important; /* Electric cyan highlight */
-    font-size: 1.4rem;
+    color: #00E5FF !important; 
+    font-size: 1.5rem;
     font-weight: 500;
     margin-top: 0;
   }
@@ -41,30 +51,30 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
   }
 
   .chip {
-    background-color: rgba(248, 250, 252, 0.05); /* Transparent light text color */
-    border: 1px solid #00E5FF; /* Cyan border */
+    background-color: rgba(248, 250, 252, 0.05); 
+    border: 1px solid #00E5FF; 
     color: #F8FAFC;
-    padding: 0.5rem 1.2rem;
+    padding: 0.6rem 1.4rem;
     border-radius: 50px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     text-decoration: none;
     transition: all 0.3s ease;
   }
 
   .chip:hover {
     background-color: #00E5FF;
-    color: #0B132B; /* Navy text on cyan hover */
+    color: #0B132B; 
     transform: translateY(-2px);
   }
 
   /* Quote Box */
   .premium-quote {
-    background-color: #F1F5F9; /* Card background */
-    border-left: 5px solid #D4AF37; /* Gold accent */
+    background-color: #F1F5F9; 
+    border-left: 5px solid #D4AF37; 
     padding: 1.5rem 2rem;
     font-style: italic;
     font-size: 1.1rem;
@@ -75,10 +85,10 @@
 
   /* Section Headings */
   .section-title {
-    color: #0B132B; /* Navy Headings */
+    color: #0B132B; 
     font-size: 1.8rem;
     font-weight: 700;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
@@ -88,17 +98,17 @@
   /* Cards Grid */
   .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1.5rem;
     margin-bottom: 2rem;
   }
 
   .premium-card {
-    background-color: #F1F5F9; /* Card background (No pure white) */
-    border: 1px solid rgba(11, 19, 43, 0.1); /* Navy transparent border */
-    border-top: 4px solid #0B132B; /* Navy top border */
+    background-color: #F1F5F9; 
+    border: 1px solid rgba(11, 19, 43, 0.1); 
+    border-top: 4px solid #0B132B; 
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 1.8rem;
     box-shadow: 0 4px 6px rgba(11, 19, 43, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
@@ -106,13 +116,13 @@
   .premium-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(11, 19, 43, 0.1);
-    border-top-color: #D4AF37; /* Hover changes to Gold */
+    border-top-color: #D4AF37; 
   }
 
   .premium-card h4 {
     color: #0B132B;
     margin-top: 0;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     border-bottom: 1px solid rgba(11, 19, 43, 0.1);
     padding-bottom: 0.5rem;
   }
@@ -122,27 +132,28 @@
     width: 100%;
     border-collapse: collapse;
     margin: 2rem 0;
-    background-color: #F1F5F9; /* Card background */
+    background-color: #F1F5F9; 
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(11, 19, 43, 0.05);
   }
 
   .premium-table th {
-    background-color: #0B132B; /* Navy */
-    color: #F8FAFC; /* Light text */
-    padding: 1rem;
+    background-color: #0B132B; 
+    color: #F8FAFC; 
+    padding: 1.2rem;
     text-align: left;
+    font-size: 1.1rem;
   }
 
   .premium-table td {
-    padding: 1rem;
+    padding: 1.2rem;
     border-bottom: 1px solid rgba(11, 19, 43, 0.1);
     color: #1E293B;
   }
 
   .premium-table tr:hover {
-    background-color: #FAF9F6; /* Ivory hover */
+    background-color: #FAF9F6; 
   }
 
   /* Bullet Lists */
@@ -154,13 +165,14 @@
   .custom-list li {
     position: relative;
     padding-left: 1.5rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
     color: #1E293B;
+    font-size: 1.05rem;
   }
 
   .custom-list li::before {
     content: '■';
-    color: #D4AF37; /* Gold bullets */
+    color: #D4AF37; 
     position: absolute;
     left: 0;
     top: 2px;
@@ -169,21 +181,21 @@
 
   /* CTA Box */
   .cta-box {
-    background-color: #0B132B; /* Navy background */
+    background-color: #0B132B; 
     color: #F8FAFC;
     text-align: center;
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
     border-radius: 12px;
     margin-top: 4rem;
-    border: 1px solid rgba(212, 175, 55, 0.3); /* Subtle Gold border */
+    border: 1px solid rgba(212, 175, 55, 0.3); 
   }
 
   .cta-button {
     display: inline-block;
-    background-color: #00E5FF; /* High Visibility CTA */
-    color: #0B132B; /* Navy text for contrast */
+    background-color: #00E5FF; 
+    color: #0B132B; 
     font-weight: 700;
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     border-radius: 8px;
     text-decoration: none;
     margin-top: 1.5rem;
@@ -193,7 +205,7 @@
   }
 
   .cta-button:hover {
-    background-color: #D4AF37; /* Cyan shifts to Gold on hover */
+    background-color: #D4AF37; 
     color: #0B132B;
     transform: scale(1.05);
   }
@@ -204,7 +216,7 @@
   <div class="hero-section">
     <h1>Dr. Sandeep Shrivastava</h1>
     <h2>The Healthcare-AI Visionary & Automation Architect</h2>
-    <p style="margin-top: 1rem; font-size: 1.1rem; opacity: 0.9;">
+    <p style="margin-top: 1rem; font-size: 1.15rem; opacity: 0.9;">
       Ayurvedic Doctor | Dietitian | Child Care & Education Specialist <br> Healthcare Business Coach | AI Automation Expert
     </p>
     
@@ -212,13 +224,13 @@
       <a href="mailto:ask@allhelp.in" class="chip">📧 ask@allhelp.in</a>
       <a href="tel:9140415046" class="chip">📞 9140415046</a>
       <a href="https://www.linkedin.com/in/dr-sandeep-shrivastva-6a206429b" target="_blank" class="chip">🔗 LinkedIn</a>
-      <a href="https://whatsapp.com/channel/0029Va5tFCoGZNClobRrOQ15" target="_blank" class="chip">📱 WhatsApp Channel</a>
+      <a href="https://whatsapp.com/channel/0029Va5tFCoGZNClobRrOQ15" target="_blank" class="chip">📱 WhatsApp</a>
       <a href="https://t.me/medpreneur" target="_blank" class="chip">📱 Telegram</a>
     </div>
   </div>
 
   <div class="section-title">🚀 The Complete AI Automation Ecosystem Builder</div>
-  <p>Dr. Sandeep Shrivastava is a <strong>revolutionary force</strong> at the intersection of <strong>traditional Ayurvedic wisdom</strong> and <strong>cutting-edge artificial intelligence</strong>. He hasn't just learned technology—he has <strong>mastered the art of execution</strong>, building a self-sustaining automation empire that bridges ancient healthcare with futuristic innovation.</p>
+  <p style="font-size: 1.1rem;">Dr. Sandeep Shrivastava is a <strong>revolutionary force</strong> at the intersection of <strong>traditional Ayurvedic wisdom</strong> and <strong>cutting-edge artificial intelligence</strong>. He hasn't just learned technology—he has <strong>mastered the art of execution</strong>, building a self-sustaining automation empire that bridges ancient healthcare with futuristic innovation.</p>
   
   <div class="premium-quote">
     "Not just coding. Not just tools. A complete system. The focus is never just basic Q&A; it is about building robust <strong>Automation Pipelines</strong> that execute real work."
@@ -228,7 +240,7 @@
   <div class="cards-grid">
     <div class="premium-card">
       <h4>🤖 AI & Tech Arsenal</h4>
-      <ul style="padding-left: 1rem;">
+      <ul style="padding-left: 1rem; font-size: 1.05rem; line-height: 1.8;">
         <li><strong>Local AI:</strong> OpenClaw & Ollama (Zero Dependency)</li>
         <li><strong>RAG Systems:</strong> Advanced Vector DB Implementation</li>
         <li><strong>AI Agents:</strong> LangChain & CrewAI Specialist</li>
@@ -239,7 +251,7 @@
     
     <div class="premium-card">
       <h4>🏥 Traditional Medicine Authority</h4>
-      <ul style="padding-left: 1rem;">
+      <ul style="padding-left: 1rem; font-size: 1.05rem; line-height: 1.8;">
         <li><strong>BAMS Graduate:</strong> Govt. Ayurveda Medical College</li>
         <li><strong>Certified:</strong> Nutrition & Health Education</li>
         <li><strong>Published Author:</strong> 300+ Ebooks & 5+ Physical Books</li>
@@ -252,8 +264,8 @@
   <div class="cards-grid">
     <div class="premium-card">
       <h4>Healthcare Ventures</h4>
-      <p>Founder & Owner of:</p>
-      <ul style="padding-left: 1rem;">
+      <p style="font-size: 1.05rem; opacity: 0.8; margin-bottom: 0.5rem;">Founder & Owner of:</p>
+      <ul style="padding-left: 1rem; font-size: 1.05rem; line-height: 1.8;">
         <li><strong>MedPreneurs</strong> (Startup Ecosystem)</li>
         <li><strong>DeepLifeCourse</strong> (Deep Learning)</li>
         <li><strong>Bhojdeep</strong> (Nutritional Wisdom)</li>
@@ -263,7 +275,7 @@
 
     <div class="premium-card">
       <h4>Consultancy Offered</h4>
-      <ul style="padding-left: 1rem;">
+      <ul style="padding-left: 1rem; font-size: 1.05rem; line-height: 1.8;">
         <li><strong>Business Coaching:</strong> Incubation & Strategy</li>
         <li><strong>AI Implementation:</strong> Automation Pipelines</li>
         <li><strong>Training:</strong> Ayurveda & Digital Transformation</li>
@@ -308,10 +320,10 @@
   </ul>
 
   <div class="cta-box">
-    <h2 style="margin: 0; color: #F8FAFC; font-size: 2rem;">Ready to build real AI systems?</h2>
-    <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem;">Transforming healthcare through technology. Building real systems, not just wrappers.</p>
+    <h2 style="margin: 0; color: #F8FAFC; font-size: 2.2rem;">Ready to build real AI systems?</h2>
+    <p style="font-size: 1.15rem; opacity: 0.9; margin-bottom: 2rem; margin-top: 1rem;">Transforming healthcare through technology. Building real systems, not just wrappers.</p>
     <a href="mailto:ask@allhelp.in" class="cta-button">📩 Contact ask@allhelp.in</a>
-    <p style="margin-top: 1.5rem; font-style: italic; opacity: 0.7;">"This is not learning. This is execution." 🚀</p>
+    <p style="margin-top: 2rem; font-style: italic; opacity: 0.7; font-size: 1.1rem;">"This is not learning. This is execution." 🚀</p>
   </div>
 
 </div>
