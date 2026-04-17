@@ -29,9 +29,7 @@ nav:
   - "🧪 AI Lab":
     - "Prompt Engineering": ai-lab/prompt-engineering.md
     - "Qwen vs Llama": ai-lab/model-comparisons.md
-  - "📝 Insights (Blog)":
-    - "AI in Ayurveda": blog/ai-ayurveda.md
-    - "Local AI for Doctors": blog/local-ai-doctors.md
+  - - "📝 Insights (Blog)":
     - "1st Blog": Insights/1st blog.md
     - "The Clinical Reality": Insights/the-clinical-reality.md
   - "🏆 Portfolio & Impact":
