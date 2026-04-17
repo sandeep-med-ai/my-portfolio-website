@@ -214,7 +214,7 @@ hide:
 <div class="portfolio-container">
 
   <div class="hero-section">
-    <h1>Dr. Sandeep Shrivastava</h1>
+    <h1>Dr. Sandeep Shrivastva</h1>
     <h2>The Healthcare-AI Visionary & Automation Architect</h2>
     <p style="margin-top: 1rem; font-size: 1.15rem; opacity: 0.9;">
       Ayurvedic Doctor | Dietitian | Child Care & Education Specialist <br> Healthcare Business Coach | AI Automation Expert
@@ -267,9 +267,8 @@ hide:
       <p style="font-size: 1.05rem; opacity: 0.8; margin-bottom: 0.5rem;">Founder & Owner of:</p>
       <ul style="padding-left: 1rem; font-size: 1.05rem; line-height: 1.8;">
         <li><strong>MedPreneurs</strong> (Startup Ecosystem)</li>
-        <li><strong>DeepLifeCourse</strong> (Deep Learning)</li>
         <li><strong>Bhojdeep</strong> (Nutritional Wisdom)</li>
-        <li><strong>GrowDeep & HealthDeep</strong></li>
+        <li><strong>PureMDX</strong></li>
       </ul>
     </div>
 
@@ -294,7 +293,7 @@ hide:
     <tbody>
       <tr>
         <td><strong>Technical</strong></td>
-        <td>Data Analysis, Python, Java, HTML, CSS, API Integration</td>
+        <td>Data Analysis, AI-Assisted Coding & Development, API Integration</td>
       </tr>
       <tr>
         <td><strong>AI/ML</strong></td>
