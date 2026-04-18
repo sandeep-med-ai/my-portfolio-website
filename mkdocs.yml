@@ -1,12 +1,15 @@
 site_name: Dr. Sandeep Blog
+
 theme:
   name: material
 
 plugins:
   - search
   - awesome-pages
+
 extra_css:
   - stylesheets/custom.css
+
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
