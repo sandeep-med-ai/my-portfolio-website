@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-          cache: 'pip' # Isse website jaldi build hogi
+          # Yahan se cache wali line hata di gayi hai taaki error na aaye
 
       - name: 📦 Install MkDocs Material & Plugins
         run: pip install mkdocs-material mkdocs-awesome-pages-plugin
@@ -27,14 +27,11 @@ jobs:
       - name: 🔗 Scan for Broken Links (Lychee)
         uses: lycheeverse/lychee-action@v1.9.3
         with:
-          # Sirf docs folder ke andar ki markdown aur HTML files check karega
           args: --verbose --no-progress './docs/**/*.md' './docs/**/*.html'
-          # Tute hue link milne par action fail kar dega
           fail: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       # --- 🚀 Strict Deployment ---
       - name: 🌐 Deploy to GitHub Pages
-        # --strict ensures MkDocs also catches any dead internal links
         run: mkdocs gh-deploy --force --strict
