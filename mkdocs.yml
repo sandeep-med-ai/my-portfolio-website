@@ -1,8 +1,27 @@
 site_name: Dr. Sandeep Blog
 site_url: https://drsandeep.allhelp.in/
+site_description: Healthcare AI, Ayurveda, automation, and clinical intelligence portfolio by Dr. Sandeep Shrivastva.
 
 theme:
   name: material
+  language: en
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.sections
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
 
 plugins:
   - search

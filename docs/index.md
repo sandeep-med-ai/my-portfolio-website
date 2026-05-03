@@ -3,234 +3,37 @@ hide:
   - navigation
   - toc
 ---
-<style>
-  /* --- OVERRIDE MKDOCS NARROW WIDTH --- */
-  .md-grid {
-    max-width: 1200px !important; /* Forces the container to be wide */
-  }
-
-  /* --- STRICT PREMIUM BRAND SYSTEM --- */
-  .portfolio-container {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    color: #1E293B; 
-    background-color: #FAF9F6; 
-    line-height: 1.6;
-    padding: 1rem 0;
-  }
-
-  /* Hero Section */
-  .hero-section {
-    background-color: #0B132B; 
-    color: #F8FAFC; 
-    padding: 4rem 2rem;
-    border-radius: 12px;
-    text-align: center;
-    margin-bottom: 2.5rem;
-    box-shadow: 0 10px 30px rgba(11, 19, 43, 0.15); 
-    border-bottom: 4px solid #D4AF37; 
-  }
-
-  .hero-section h1 {
-    color: #F8FAFC !important;
-    font-size: 3.2rem;
-    margin-bottom: 0.5rem;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-  }
-
-  .hero-section h2 {
-    color: #00E5FF !important; 
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-top: 0;
-  }
-
-  /* Contact Chips */
-  .contact-chips {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-
-  .chip {
-    background-color: rgba(248, 250, 252, 0.05); 
-    border: 1px solid #00E5FF; 
-    color: #F8FAFC;
-    padding: 0.6rem 1.4rem;
-    border-radius: 50px;
-    font-size: 0.95rem;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-
-  .chip:hover {
-    background-color: #00E5FF;
-    color: #0B132B; 
-    transform: translateY(-2px);
-  }
-
-  /* Quote Box */
-  .premium-quote {
-    background-color: #F1F5F9; 
-    border-left: 5px solid #D4AF37; 
-    padding: 1.5rem 2rem;
-    font-style: italic;
-    font-size: 1.1rem;
-    color: #1E293B;
-    margin: 2rem 0;
-    border-radius: 0 8px 8px 0;
-  }
-
-  /* Section Headings */
-  .section-title {
-    color: #0B132B; 
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-top: 3.5rem;
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  /* Cards Grid */
-  .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-  }
-
-  .premium-card {
-    background-color: #F1F5F9; 
-    border: 1px solid rgba(11, 19, 43, 0.1); 
-    border-top: 4px solid #0B132B; 
-    border-radius: 8px;
-    padding: 1.8rem;
-    box-shadow: 0 4px 6px rgba(11, 19, 43, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .premium-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(11, 19, 43, 0.1);
-    border-top-color: #D4AF37; 
-  }
-
-  .premium-card h4 {
-    color: #0B132B;
-    margin-top: 0;
-    font-size: 1.3rem;
-    border-bottom: 1px solid rgba(11, 19, 43, 0.1);
-    padding-bottom: 0.5rem;
-  }
-
-  /* Table Styling */
-  .premium-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 2rem 0;
-    background-color: #F1F5F9; 
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(11, 19, 43, 0.05);
-  }
-
-  .premium-table th {
-    background-color: #0B132B; 
-    color: #F8FAFC; 
-    padding: 1.2rem;
-    text-align: left;
-    font-size: 1.1rem;
-  }
-
-  .premium-table td {
-    padding: 1.2rem;
-    border-bottom: 1px solid rgba(11, 19, 43, 0.1);
-    color: #1E293B;
-  }
-
-  .premium-table tr:hover {
-    background-color: #FAF9F6; 
-  }
-
-  /* Bullet Lists */
-  .custom-list {
-    list-style: none;
-    padding-left: 0;
-  }
-
-  .custom-list li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-    color: #1E293B;
-    font-size: 1.05rem;
-  }
-
-  .custom-list li::before {
-    content: '■';
-    color: #D4AF37; 
-    position: absolute;
-    left: 0;
-    top: 2px;
-    font-size: 0.8rem;
-  }
-
-  /* CTA Box */
-  .cta-box {
-    background-color: #0B132B; 
-    color: #F8FAFC;
-    text-align: center;
-    padding: 4rem 2rem;
-    border-radius: 12px;
-    margin-top: 4rem;
-    border: 1px solid rgba(212, 175, 55, 0.3); 
-  }
-
-  .cta-button {
-    display: inline-block;
-    background-color: #00E5FF; 
-    color: #0B132B; 
-    font-weight: 700;
-    padding: 1rem 2.5rem;
-    border-radius: 8px;
-    text-decoration: none;
-    margin-top: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-  }
-
-  .cta-button:hover {
-    background-color: #D4AF37; 
-    color: #0B132B;
-    transform: scale(1.05);
-  }
-</style>
 
 <div class="portfolio-container">
 
-  <div class="hero-section">
-    <h1>Dr. Sandeep Shrivastva</h1>
-    <h2>The Healthcare-AI Visionary & Automation Architect</h2>
-    <p style="margin-top: 1rem; font-size: 1.15rem; opacity: 0.9;">
-      Ayurvedic Doctor | Dietitian | Child Care & Education Specialist <br> Healthcare Business Coach | AI Automation Expert
-    </p>
-    
-    <div class="contact-chips">
-      <a href="mailto:ask@allhelp.in" class="chip">📧 ask@allhelp.in</a>
-      <a href="tel:9140415046" class="chip">📞 9140415046</a>
-      <a href="https://www.linkedin.com/in/dr-sandeep-shrivastva-6a206429b" target="_blank" class="chip">🔗 LinkedIn</a>
-      <a href="https://whatsapp.com/channel/0029Va5tFCoGZNClobRrOQ15" target="_blank" class="chip">📱 WhatsApp</a>
-      <a href="https://t.me/medpreneur" target="_blank" class="chip">📱 Telegram</a>
+  <section class="portfolio-hero">
+    <div class="portfolio-hero__inner">
+      <p class="portfolio-eyebrow">Healthcare AI | Ayurveda | Automation</p>
+      <h1>Dr. Sandeep Shrivastva</h1>
+      <p class="portfolio-hero__subtitle">
+        Ayurvedic doctor, clinical educator, healthcare business coach, and AI automation architect building practical systems for modern medicine, patient communication, and digital health operations.
+      </p>
+
+      <div class="portfolio-actions">
+        <a href="mailto:ask@allhelp.in" class="portfolio-action portfolio-action--primary">Contact: ask@allhelp.in</a>
+        <a href="tel:9140415046" class="portfolio-action">Call: 9140415046</a>
+        <a href="https://www.linkedin.com/in/dr-sandeep-shrivastva-6a206429b" target="_blank" class="portfolio-action">LinkedIn</a>
+        <a href="https://whatsapp.com/channel/0029Va5tFCoGZNClobRrOQ15" target="_blank" class="portfolio-action">WhatsApp</a>
+        <a href="https://t.me/medpreneur" target="_blank" class="portfolio-action">Telegram</a>
+      </div>
+
     </div>
+  </section>
+
+  <div class="metric-strip">
+    <div class="metric"><strong>300+</strong><span>Books and ebooks</span></div>
+    <div class="metric"><strong>50+</strong><span>Professional courses</span></div>
+    <div class="metric"><strong>AI</strong><span>Automation systems</span></div>
+    <div class="metric"><strong>BAMS</strong><span>Ayurveda foundation</span></div>
   </div>
 
   <div class="section-title">🚀 The Complete AI Automation Ecosystem Builder</div>
-  <p style="font-size: 1.1rem;">Dr. Sandeep Shrivastava is a <strong>revolutionary force</strong> at the intersection of <strong>traditional Ayurvedic wisdom</strong> and <strong>cutting-edge artificial intelligence</strong>. He hasn't just learned technology—he has <strong>mastered the art of execution</strong>, building a self-sustaining automation empire that bridges ancient healthcare with futuristic innovation.</p>
+  <p>Dr. Sandeep Shrivastava works at the intersection of <strong>traditional Ayurvedic wisdom</strong>, <strong>clinical reasoning</strong>, and <strong>practical artificial intelligence</strong>. The focus is not just tools or theory; it is building real healthcare automation pipelines that support education, decision-making, content systems, and patient communication.</p>
   
   <div class="premium-quote">
     "Not just coding. Not just tools. A complete system. The focus is never just basic Q&A; it is about building robust <strong>Automation Pipelines</strong> that execute real work."
@@ -241,7 +44,7 @@ hide:
     <div class="premium-card">
       <h4>🤖 AI & Tech Arsenal</h4>
       <ul style="padding-left: 1rem; font-size: 1.05rem; line-height: 1.8;">
-        <li><strong>Local AI:</strong> OpenClaw & Ollama (Zero Dependency)</li>
+        <li><strong>Local AI:</strong> OpenClaw & Ollama</li>
         <li><strong>RAG Systems:</strong> Advanced Vector DB Implementation</li>
         <li><strong>AI Agents:</strong> LangChain & CrewAI Specialist</li>
         <li><strong>Automation:</strong> n8n Expert & Telegram Bots</li>
@@ -320,9 +123,9 @@ hide:
 
   <div class="cta-box">
     <h2 style="margin: 0; color: #F8FAFC; font-size: 2.2rem;">Ready to build real AI systems?</h2>
-    <p style="font-size: 1.15rem; opacity: 0.9; margin-bottom: 2rem; margin-top: 1rem;">Transforming healthcare through technology. Building real systems, not just wrappers.</p>
-    <a href="mailto:ask@allhelp.in" class="cta-button">📩 Contact ask@allhelp.in</a>
-    <p style="margin-top: 2rem; font-style: italic; opacity: 0.7; font-size: 1.1rem;">"This is not learning. This is execution." 🚀</p>
+    <p>Transforming healthcare through technology. Building real systems, not just wrappers.</p>
+    <a href="mailto:ask@allhelp.in" class="cta-button">Contact ask@allhelp.in</a>
+    <p>"This is not learning. This is execution."</p>
   </div>
 
 </div>
