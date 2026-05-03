@@ -1,1 +1,16 @@
-# Coming Soon
+# Differential Diagnosis
+
+Differential diagnosis is the discipline of keeping multiple possibilities open while collecting better evidence.
+
+## Working Method
+
+1. Start with the main symptom cluster.
+2. Separate urgent possibilities from routine ones.
+3. Compare similar conditions.
+4. Look for contradictions.
+5. Decide what information is still missing.
+
+## AI Opportunity
+
+AI can support differential diagnosis by organizing possibilities, reminding clinicians of red flags, and summarizing evidence. It should never replace professional examination.
+

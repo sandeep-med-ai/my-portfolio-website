@@ -1,1 +1,17 @@
-# Coming Soon
+# Case Studies
+
+Case studies are where theory becomes practical judgment. This section is designed for clinical patterns, learning summaries, and structured patient scenarios.
+
+## Case Study Template
+
+- Presentation summary.
+- Key findings.
+- Reasoning pathway.
+- Management plan.
+- Follow-up observation.
+- Learning point.
+
+## Editorial Direction
+
+The goal is to build a library of cases that teaches pattern recognition without exposing private patient information.
+

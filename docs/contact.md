@@ -1,4 +1,8 @@
-# 📞 Let's Build the Future of Healthcare AI
+---
+title: Contact
+---
+
+# Contact
 
 I am actively open to roles, collaborations, and consulting opportunities where clinical knowledge meets advanced AI automation. 
 
@@ -9,9 +13,9 @@ If your team is building HealthTech products, EMR systems, or medical AI agents,
 * Technical proficiency in Python, local LLM orchestration (Ollama/CrewAI), and automation.
 * A strong focus on data privacy and local system deployment.
 
-### 📫 Reach Out
-* **Email:** [Your Email Here]
+### Reach Out
+* **Email:** [ask@allhelp.in](mailto:ask@allhelp.in)
 * **GitHub:** [@sandeep-med-ai](https://github.com/sandeep-med-ai)
-* **LinkedIn:** [Your LinkedIn Link Here]
+* **LinkedIn:** [Dr. Sandeep Shrivastva](https://www.linkedin.com/in/dr-sandeep-shrivastva-6a206429b)
 
 *Available for full-time roles and freelance HealthTech architecture.*

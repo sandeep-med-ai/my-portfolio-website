@@ -161,6 +161,87 @@ body {
   box-shadow: 0 12px 30px rgba(16, 42, 67, 0.07);
 }
 
+.category-hero,
+.insights-hero {
+  margin-bottom: 1.2rem;
+  padding: 2.2rem;
+  color: #f8fbff;
+  background:
+    linear-gradient(135deg, rgba(16, 42, 67, 0.96), rgba(15, 124, 128, 0.86)),
+    url("https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1600&q=80");
+  background-position: center;
+  background-size: cover;
+  border-radius: var(--portfolio-radius);
+  box-shadow: var(--portfolio-shadow);
+}
+
+.category-hero h1,
+.insights-hero h1 {
+  margin: 0;
+  color: #ffffff !important;
+}
+
+.category-hero p,
+.insights-hero p {
+  max-width: 760px;
+  margin: 0.8rem 0 0;
+  color: rgba(248, 251, 255, 0.9) !important;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.4rem 0 2rem;
+}
+
+.overview-card {
+  display: block;
+  min-width: 0;
+  padding: 1.25rem;
+  color: inherit !important;
+  text-decoration: none !important;
+  background: var(--portfolio-panel);
+  border: 1px solid var(--portfolio-line);
+  border-top: 4px solid var(--portfolio-teal);
+  border-radius: var(--portfolio-radius);
+  box-shadow: 0 12px 32px rgba(16, 42, 67, 0.07);
+}
+
+.overview-card:hover {
+  border-top-color: var(--portfolio-gold);
+}
+
+.overview-card strong {
+  display: block;
+  color: var(--portfolio-ink);
+  font-size: 1.03rem;
+}
+
+.overview-card span {
+  display: block;
+  margin-top: 0.45rem;
+  color: var(--portfolio-muted);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.status-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1.2rem 0;
+}
+
+.status-pill {
+  padding: 0.75rem 0.9rem;
+  color: #243247;
+  background: var(--portfolio-soft);
+  border: 1px solid var(--portfolio-line);
+  border-radius: var(--portfolio-radius);
+  font-weight: 700;
+}
+
 .portfolio-container {
   color: #172033;
 }
@@ -462,6 +543,16 @@ body {
 
   .cards-grid {
     grid-template-columns: 1fr;
+  }
+
+  .overview-grid,
+  .status-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .category-hero,
+  .insights-hero {
+    padding: 1.4rem;
   }
 
   .metric-strip {

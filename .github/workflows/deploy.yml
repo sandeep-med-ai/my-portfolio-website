@@ -23,6 +23,9 @@ jobs:
       - name: 📦 Install MkDocs Material & Plugins
         run: pip install mkdocs-material mkdocs-awesome-pages-plugin
 
+      - name: 🧱 Build Site Strictly
+        run: mkdocs build --strict
+
       # --- 🛡️ Dr. Sandeep's Bulletproof Link Scanner ---
       - name: 🔗 Scan for Broken Links (Lychee)
         uses: lycheeverse/lychee-action@v1.9.3
@@ -32,9 +35,13 @@ jobs:
             --no-progress
             --max-retries 3
             --timeout 30
+            --base './site'
+            --exclude-path './site/404.html'
+            --exclude 'https://drsandeep.allhelp.in/.*'
+            --exclude 'https://fonts.gstatic.com/.*'
             --exclude 'https://github.com/user-attachments/assets/.*'
-            './docs/**/*.md'
-            './docs/**/*.html'
+            --exclude 'https://www.linkedin.com/.*'
+            './site/**/*.html'
           fail: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

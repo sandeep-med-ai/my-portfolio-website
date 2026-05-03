@@ -1,1 +1,16 @@
-# Coming Soon
+# Medical Chatbot
+
+A medical chatbot should not behave like a casual Q&A bot. It needs intake structure, safety boundaries, escalation triggers, and patient-friendly explanations.
+
+## System Concept
+
+- Collect symptoms in a guided format.
+- Identify urgency signals.
+- Provide educational guidance.
+- Recommend professional consultation when needed.
+- Store conversation summaries for follow-up workflows.
+
+## Responsible Design
+
+The chatbot should avoid diagnosis claims, medication changes, or emergency handling beyond clear referral instructions. Its best role is communication support and structured intake.
+

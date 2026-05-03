@@ -1,1 +1,17 @@
-# Coming Soon
+# Treatment Logic
+
+Treatment logic connects diagnosis, patient context, intervention choice, and follow-up. The best plan is not only medically sound; it is understandable and practical for the patient.
+
+## Planning Layers
+
+- Primary clinical goal.
+- Patient constitution and context.
+- Safety considerations.
+- Diet and lifestyle support.
+- Follow-up timing.
+- Outcome tracking.
+
+## System View
+
+Good treatment planning can become a repeatable workflow: collect evidence, choose a plan, explain it clearly, monitor response, and adjust responsibly.
+

@@ -1,0 +1,11 @@
+<section class="category-hero">
+  <h1>Portfolio</h1>
+  <p>Selected works, impact notes, public links, and flagship healthcare AI initiatives.</p>
+</section>
+
+<div class="overview-grid">
+  <a class="overview-card" href="top-works/"><strong>Top Works</strong><span>Signature projects across clinical education, AI, automation, and publishing.</span></a>
+  <a class="overview-card" href="impact/"><strong>Impact</strong><span>How the work translates into learning, operations, and healthcare outcomes.</span></a>
+  <a class="overview-card" href="Links/"><strong>Links</strong><span>Public profiles, channels, repositories, and contact points.</span></a>
+</div>
+

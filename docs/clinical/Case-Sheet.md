@@ -1,1 +1,17 @@
-# Coming Soon...
+# Case Sheet
+
+A strong case sheet turns patient history into usable clinical intelligence. It should be fast to fill, easy to review, and structured enough for future AI-assisted analysis.
+
+## Suggested Structure
+
+- Patient profile and chief complaint.
+- History of present illness.
+- Past history, family history, and lifestyle context.
+- Examination findings.
+- Differential diagnosis.
+- Treatment plan and follow-up notes.
+
+## Why It Matters
+
+Clean case sheets reduce missed details, improve continuity, and create better data for EMR automation and clinical learning.
+

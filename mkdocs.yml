@@ -1,4 +1,4 @@
-site_name: Dr. Sandeep Blog
+site_name: Dr. Sandeep | AI Automation & Clinical Expert
 site_url: https://drsandeep.allhelp.in/
 site_description: Healthcare AI, Ayurveda, automation, and clinical intelligence portfolio by Dr. Sandeep Shrivastva.
 
@@ -15,6 +15,8 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.sections
     - navigation.indexes
