@@ -1,4 +1,4 @@
-name: Deploy MkDocs
+name: Deploy Astro
 
 on:
   push:
@@ -21,37 +21,17 @@ jobs:
       - name: 📥 Checkout Code
         uses: actions/checkout@v4
 
-      - name: 🐍 Setup Python
-        uses: actions/setup-python@v5
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          python-version: '3.x'
-          # Yahan se cache wali line hata di gayi hai taaki error na aaye
+          node-version: '22'
+          cache: 'npm'
 
-      - name: 📦 Install MkDocs Material & Plugins
-        run: pip install mkdocs-material mkdocs-awesome-pages-plugin
+      - name: 📦 Install Dependencies
+        run: npm install
 
-      - name: 🧱 Build Site Strictly
-        run: mkdocs build --strict
-
-      # --- 🛡️ Dr. Sandeep's Bulletproof Link Scanner ---
-      - name: 🔗 Scan for Broken Links (Lychee)
-        uses: lycheeverse/lychee-action@v1.9.3
-        with:
-          args: >-
-            --verbose
-            --no-progress
-            --max-retries 3
-            --timeout 30
-            --base './site'
-            --exclude-path './site/404.html'
-            --exclude 'https://drsandeep.allhelp.in/.*'
-            --exclude 'https://fonts.gstatic.com/.*'
-            --exclude 'https://github.com/user-attachments/assets/.*'
-            --exclude 'https://www.linkedin.com/.*'
-            './site/**/*.html'
-          fail: true
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: 🧱 Build Astro Site
+        run: npm run build
 
       - name: ⚙️ Configure GitHub Pages
         uses: actions/configure-pages@v5
@@ -59,7 +39,7 @@ jobs:
       - name: 📦 Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: dist
 
   deploy:
     needs: build
