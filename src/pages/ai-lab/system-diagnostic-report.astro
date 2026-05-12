@@ -1,8 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import RichContentShell from '../../components/RichContentShell.astro';
 ---
 
 <Layout title="System Diagnostic Report">
+<RichContentShell title="System Diagnostic Report" description="Live status of the medical AI automation ecosystem.">
 <style>
   .ai-canvas {
     background-color: #0f172a;
@@ -54,7 +56,6 @@ import Layout from '../../layouts/Layout.astro';
 </style>
 
 <div class="ai-canvas">
-  <h1>System Diagnostic Report</h1>
   <div class="status-badge">All Systems Operational</div>
 
   <div class="dashboard-grid">
@@ -92,4 +93,5 @@ import Layout from '../../layouts/Layout.astro';
     </div>
   </div>
 </div>
+</RichContentShell>
 </Layout>

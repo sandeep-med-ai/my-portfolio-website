@@ -1,0 +1,50 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  href: string;
+  class?: string;
+}
+
+const { title, description, href, class: className } = Astro.props;
+---
+
+<a href={href} class:list={["overview-card", className]}>
+  <strong>{title}</strong>
+  <span>{description}</span>
+</a>
+
+<style>
+  .overview-card {
+    display: block;
+    min-width: 0;
+    padding: 1.25rem;
+    color: inherit !important;
+    text-decoration: none !important;
+    background: var(--portfolio-panel, #ffffff);
+    border: 1px solid var(--portfolio-line, rgba(16, 42, 67, 0.14));
+    border-top: 4px solid var(--portfolio-teal, #0f7c80);
+    border-radius: var(--portfolio-radius, 8px);
+    box-shadow: 0 12px 32px rgba(16, 42, 67, 0.07);
+    transition: border-top-color 0.2s ease;
+  }
+
+  .overview-card:hover {
+    border-top-color: var(--portfolio-gold, #b6842e);
+  }
+
+  .overview-card strong {
+    display: block;
+    color: var(--portfolio-ink, #102a43);
+    font-size: 1.03rem;
+    font-weight: 700;
+  }
+
+  .overview-card span {
+    display: block;
+    margin-top: 0.45rem;
+    color: var(--portfolio-muted, #5c667a);
+    font-size: 0.8rem;
+    line-height: 1.55;
+  }
+</style>

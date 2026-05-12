@@ -1,14 +1,16 @@
 ---
 layout: ../../layouts/Layout.astro
 ---
+import CategoryHero from '../../components/CategoryHero.astro';
+import OverviewCard from '../../components/OverviewCard.astro';
 
-<section class="category-hero">
-  <h1>HealthTech Studies</h1>
-  <p>Healthcare automation, medical RAG, WhatsApp workflows, OPD operations, and Ayurveda knowledge systems.</p>
-</section>
+<CategoryHero 
+  title="HealthTech Studies" 
+  description="Healthcare automation, medical RAG, WhatsApp workflows, OPD operations, and Ayurveda knowledge systems." 
+/>
 
 <div class="overview-grid">
-  <a class="overview-card" href="/healthtech/AII-uses/"><strong>AI Uses</strong><span>High-value places where AI can reduce friction in healthcare operations.</span></a>
+  <OverviewCard title="AI Uses" description="High-value places where AI can reduce friction in healthcare operations." href="/healthtech/AII-uses/" />
   <a class="overview-card" href="/healthtech/ayurveda-knowledge-os/"><strong>Ayurveda Knowledge OS</strong><span>A structured knowledge architecture for Ayurveda learning and retrieval.</span></a>
   <a class="overview-card" href="/healthtech/medical-rag/"><strong>Medical RAG</strong><span>Retrieval-augmented systems for trustworthy clinical knowledge access.</span></a>
   <a class="overview-card" href="/healthtech/opd-wait-time/"><strong>OPD Wait Time</strong><span>Operational ideas for reducing patient waiting and clinic bottlenecks.</span></a>

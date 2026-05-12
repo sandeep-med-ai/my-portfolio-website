@@ -1,0 +1,101 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<article class="rich-content-shell">
+  <header class="shell-header">
+    <h1>{title}</h1>
+    {description && <p class="shell-description">{description}</p>}
+  </header>
+
+  <div class="shell-body">
+    <slot />
+  </div>
+</article>
+
+<style>
+  .rich-content-shell {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden; /* Prevent horizontal scroll on the container */
+  }
+
+  .shell-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--portfolio-line, rgba(16, 42, 67, 0.14));
+  }
+
+  .shell-header h1 {
+    margin: 0;
+    font-size: 2.15rem;
+    font-weight: 800;
+    color: var(--portfolio-ink, #102a43);
+  }
+
+  .shell-description {
+    margin-top: 0.75rem;
+    font-size: 1.1rem;
+    color: var(--portfolio-muted, #5c667a);
+    line-height: 1.6;
+  }
+
+  /* Scoped typography and defensive layouts */
+  .shell-body {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #243247;
+  }
+
+  /* Defensive Image Handling */
+  .shell-body :global(img) {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--portfolio-radius, 8px);
+    margin: 1.5rem 0;
+  }
+
+  /* Defensive Table Handling */
+  .shell-body :global(table) {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+  }
+
+  /* Defensive Code/Pre Handling */
+  .shell-body :global(pre),
+  .shell-body :global(code) {
+    max-width: 100%;
+    overflow-x: auto;
+    word-wrap: normal;
+  }
+
+  /* Prevent long strings from breaking layout */
+  .shell-body :global(p),
+  .shell-body :global(li),
+  .shell-body :global(h1),
+  .shell-body :global(h2),
+  .shell-body :global(h3),
+  .shell-body :global(h4),
+  .shell-body :global(h5),
+  .shell-body :global(h6) {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* Spacing for children */
+  .shell-body > :global(* + *) {
+    margin-top: 1.25rem;
+  }
+</style>

@@ -1,13 +1,15 @@
 ---
 layout: ../../layouts/Layout.astro
 ---
+import CategoryHero from '../../components/CategoryHero.astro';
+import OverviewCard from '../../components/OverviewCard.astro';
 
-<section class="category-hero">
-  <h1>Visual Library</h1>
-  <p>Visual concepts, medical illustrations, and healthcare communication references.</p>
-</section>
+<CategoryHero
+  title="Visual Knowledge Systems"
+  description="Medical visuals, structured image systems, healthcare diagrams, and visual knowledge assets."
+/>
 
 <div class="overview-grid">
-  <a class="overview-card" href="images-medicine/"><strong>Images Medicine</strong><span>Visual material for medical education and healthcare storytelling.</span></a>
+  <OverviewCard title="Images Medicine" description="Visual material for medical education and healthcare storytelling." href="/visuals/images-medicine/" />
 </div>
 
