@@ -1,11 +1,12 @@
 ---
 layout: ../../layouts/Layout.astro
 ---
+import CategoryHero from '../../components/CategoryHero.astro';
 
-<section class="category-hero">
-  <h1>AI Projects</h1>
-  <p>Practical healthcare automation concepts, clinical AI prototypes, and workflow systems designed for real medical operations.</p>
-</section>
+<CategoryHero
+  title="AI Projects"
+  description="Practical healthcare automation concepts, clinical AI prototypes, and workflow systems designed for real medical operations."
+/>
 
 <div class="overview-grid">
   <a class="overview-card" href="/ai-projects/emr-automation/"><strong>EMR Automation</strong><span>Clinical notes converted into structured, readable digital outputs.</span></a>
