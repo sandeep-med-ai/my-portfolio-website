@@ -381,27 +381,6 @@ body {
   color: var(--portfolio-ink);
 }
 
-.venture-link {
-  transition: transform 0.2s ease, border-top-color 0.2s ease;
-}
-
-.venture-link:hover {
-  transform: translateY(-4px);
-  border-top-color: var(--portfolio-gold);
-}
-
-.venture-arrow {
-  display: block;
-  margin-top: 1rem;
-  font-weight: 700;
-  font-size: 0.85rem;
-  color: var(--portfolio-teal);
-}
-
-.venture-link:hover .venture-arrow {
-  color: var(--portfolio-gold);
-}
-
 .premium-card ul {
   margin-bottom: 0;
 }

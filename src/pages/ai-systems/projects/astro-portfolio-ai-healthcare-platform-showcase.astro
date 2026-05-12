@@ -1,0 +1,305 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import RichContentShell from '../../../components/RichContentShell.astro';
+---
+
+<Layout title="Astro Portfolio AI Healthcare Platform Showcase">
+  <RichContentShell title="Astro Portfolio AI Healthcare Platform Showcase" description="A comprehensive showcase of the professional Astro portfolio and AI healthcare intelligence platform architecture.">
+    <header class="topbar">
+    <div class="wrap inner">
+      <div class="brand" aria-label="Project brand">
+        <div class="mark">A</div>
+        <div>
+          <h1>Astro Portfolio & AI Healthcare Platform</h1>
+          <p>GitHub-ready showcase for a high-trust clinical intelligence system</p>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#overview">Overview</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#structure">Structure</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#deploy">Deploy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <article class="hero-panel">
+          <div class="eyebrow">⚡ Professional GitHub repo • Astro • MDX • Rich HTML ingestion</div>
+          <h2><span>Clinical intelligence</span> meets a polished portfolio engine.</h2>
+          <p class="lead">
+            This repository is structured as a serious publishing system for healthcare AI, medical knowledge,
+            research pages, visual explainers, and operational dashboards. It is designed for fast static delivery,
+            controlled content growth, and clean GitHub deployment.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="#structure">View repo structure</a>
+            <a class="btn secondary" href="#workflow">See workflow</a>
+          </div>
+
+          <div class="metrics" aria-label="Project highlights">
+            <div class="metric">
+              <span class="num">40+</span>
+              <div class="label">Static routes generated and validated</div>
+            </div>
+            <div class="metric">
+              <span class="num">3</span>
+              <div class="label">Core content tiers: MDX, Astro, RichContentShell</div>
+            </div>
+            <div class="metric">
+              <span class="num">1</span>
+              <div class="label">Deterministic ingestion pipeline</div>
+            </div>
+            <div class="metric">
+              <span class="num">100%</span>
+              <div class="label">Static-build friendly, GitHub-ready architecture</div>
+            </div>
+          </div>
+        </article>
+
+        <aside class="side-panel">
+          <h3>What makes this repo strong</h3>
+          <ul class="mini-list">
+            <li>
+              <strong>Clean information architecture</strong>
+              Categories are grouped for clarity instead of being scattered across flat navigation.
+            </li>
+            <li>
+              <strong>Safe rich-content handling</strong>
+              Complex HTML pages are wrapped in a defensive shell to avoid layout breakage.
+            </li>
+            <li>
+              <strong>Controlled publishing pipeline</strong>
+              HTML ingestion is sanitized, categorized, and converted into Astro pages predictably.
+            </li>
+            <li>
+              <strong>GitHub-friendly operations</strong>
+              Source code lives in the repo, generated output is built locally, and deployment stays deterministic.
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="overview">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h3>Project overview</h3>
+            <p>
+              A premium Astro-based portfolio and knowledge platform for healthcare AI, medical research, operational
+              intelligence, and visually rich content publishing.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="section-card">
+            <h4>Clinical Intelligence</h4>
+            <p>
+              Pages focused on OPD workflows, medical notes, case sheets, treatment logic, and practical healthcare
+              automation.
+            </p>
+            <div class="pill-row">
+              <span class="pill">OPD AI</span>
+              <span class="pill">Case Sheets</span>
+              <span class="pill">Treatment Logic</span>
+            </div>
+          </article>
+
+          <article class="section-card">
+            <h4>AI Systems</h4>
+            <p>
+              A structured area for AI hub content, lab experiments, automation projects, and model-driven workflows.
+            </p>
+            <div class="pill-row">
+              <span class="pill">AI Hub</span>
+              <span class="pill">AI Lab</span>
+              <span class="pill">Projects</span>
+            </div>
+          </article>
+
+          <article class="section-card">
+            <h4>Research & Knowledge Base</h4>
+            <p>
+              Research notes, surveys, analysis, healthcare economics, visual explainers, and content that needs a
+              disciplined publishing system.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Researches</span>
+              <span class="pill">Data Analysis</span>
+              <span class="pill">Visual Library</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="architecture">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h3>Architecture</h3>
+            <p>
+              The stack is deliberately conservative: Astro for static delivery, MDX for content-heavy pages,
+              component wrappers for repeatable UI, and defensive shells for complex HTML.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="section-card">
+            <h4>Source layer</h4>
+            <p>Markdown, MDX, Astro components, layouts, styles, and content folders live in the repository.</p>
+          </article>
+          <article class="section-card">
+            <h4>Build layer</h4>
+            <p>`npm run build` generates static routes and the final site output in `dist/`.</p>
+          </article>
+          <article class="section-card">
+            <h4>Deployment layer</h4>
+            <p>The generated output is suitable for GitHub Pages or any static hosting target.</p>
+          </article>
+        </div>
+
+        <div class="codebox" aria-label="Architecture code snippet">
+          <header>
+            <strong>Content flow</strong>
+            <span>deterministic and reversible</span>
+          </header>
+          <pre>AI-generated HTML
+   ↓
+input/
+   ↓
+ingest_html.py
+   ↓
+src/pages/[category]/[slug].astro
+   ↓
+RichContentShell.astro
+   ↓
+npm run build
+   ↓
+dist/
+   ↓
+GitHub / hosting</pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="structure">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h3>Recommended repository structure</h3>
+            <p>
+              A clear folder model reduces confusion for contributors and makes it obvious what is source, what is
+              generated output, and what is local-only.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="section-card">
+            <h4>GitHub / source</h4>
+            <p>
+              <code>src/</code>, <code>public/</code>, configs, workflows, documentation, and content that should be
+              version-controlled.
+            </p>
+          </article>
+          <article class="section-card">
+            <h4>Local only</h4>
+            <p>
+              <code>node_modules/</code>, <code>.astro/</code>, <code>dist/</code>, editor state, and any machine-only
+              artifacts.
+            </p>
+          </article>
+          <article class="section-card">
+            <h4>Junk</h4>
+            <p>
+              Logs, swap files, temporary files, OS clutter, and dead backups that should be ignored or deleted.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h3>Publishing workflow</h3>
+            <p>
+              The workflow is built for controlled growth. Each page type has a preferred path, which prevents
+              accidental design drift.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="step">
+            <div class="index">1</div>
+            <strong>Draft</strong>
+            <p>Write in Markdown, MDX, or raw HTML depending on content complexity.</p>
+          </div>
+          <div class="step">
+            <div class="index">2</div>
+            <strong>Ingest</strong>
+            <p>Use the HTML ingestion script for AI-generated or messy external content.</p>
+          </div>
+          <div class="step">
+            <div class="index">3</div>
+            <strong>Validate</strong>
+            <p>Run build checks and confirm links, imports, responsive layout, and route output.</p>
+          </div>
+          <div class="step">
+            <div class="index">4</div>
+            <strong>Publish</strong>
+            <p>Commit, push, and deploy only after the repository is clean and the build is stable.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="deploy">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h3>Deployment notes</h3>
+            <p>
+              This repo is designed for GitHub-first operations: source in the repository, output generated locally,
+              and live pages served from static hosting.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="section-card">
+            <h4>Install</h4>
+            <p><code>npm install</code> to restore dependencies from <code>package.json</code>.</p>
+          </article>
+          <article class="section-card">
+            <h4>Build</h4>
+            <p><code>npm run build</code> to generate the final static site in <code>dist/</code>.</p>
+          </article>
+          <article class="section-card">
+            <h4>Deploy</h4>
+            <p>Push source to GitHub and serve the generated output through your chosen static host.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="line"></div>
+      <p>
+        Built for serious clinical AI publishing, clean repository governance, and GitHub-ready deployment.
+      </p>
+    </div>
+  </footer>
+  </RichContentShell>
+</Layout>

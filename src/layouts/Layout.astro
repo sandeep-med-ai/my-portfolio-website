@@ -35,16 +35,51 @@ const {
         </header>
         <nav class="md-tabs">
             <div class="md-tabs__inner md-grid">
-                <ul class="md-tabs__list" style="display: flex; list-style: none; margin: 0; padding: 0.5rem 0; flex-wrap: wrap; gap: 1rem;">
-                    <li class="md-tabs__item"><a href="/" class="md-tabs__link" style="color: white; text-decoration: none; font-weight: 700; font-size: 0.85rem;">Home</a></li>
-                    <li class="md-tabs__item"><a href="/ai-projects/" class="md-tabs__link" style="color: white; text-decoration: none; font-weight: 700; font-size: 0.85rem;">AI Projects</a></li>
-                    <li class="md-tabs__item"><a href="/ai-hub/" class="md-tabs__link" style="color: white; text-decoration: none; font-weight: 700; font-size: 0.85rem;">AI Hub</a></li>
-                    <li class="md-tabs__item"><a href="/clinical/" class="md-tabs__link" style="color: white; text-decoration: none; font-weight: 700; font-size: 0.85rem;">Clinical</a></li>
-                    <li class="md-tabs__item"><a href="/healthtech/" class="md-tabs__link" style="color: white; text-decoration: none; font-weight: 700; font-size: 0.85rem;">Healthtech</a></li>
-                    <li class="md-tabs__item"><a href="/insights/" class="md-tabs__link" style="color: white; text-decoration: none; font-weight: 700; font-size: 0.85rem;">Insights</a></li>
-                    <li class="md-tabs__item"><a href="/medical/" class="md-tabs__link" style="color: white; text-decoration: none; font-weight: 700; font-size: 0.85rem;">Medical</a></li>
-                    <li class="md-tabs__item"><a href="/portfolio/" class="md-tabs__link" style="color: white; text-decoration: none; font-weight: 700; font-size: 0.85rem;">Portfolio</a></li>
-                    <li class="md-tabs__item"><a href="/contact/" class="md-tabs__link" style="color: white; text-decoration: none; font-weight: 700; font-size: 0.85rem;">Contact</a></li>
+                <ul class="md-tabs__list">
+                    <li class="md-tabs__item"><a href="/" class="md-tabs__link">Home</a></li>
+                    
+                    <li class="md-tabs__item dropdown">
+                        <span class="md-tabs__link">Clinical</span>
+                        <ul class="dropdown-menu">
+                            <li><a href="/clinical/">Clinical Intelligence</a></li>
+                            <li><a href="/clinical/practice/Case-Sheet/">Medical Notes</a></li>
+                            <li><a href="/clinical/research/case-studies/">Case Studies</a></li>
+                            <li><a href="/clinical/research/treatment-logic/">Treatment Logic</a></li>
+                            <li><a href="/clinical/surveys/differential-diagnosis/">Differential Diagnosis</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="md-tabs__item dropdown">
+                        <span class="md-tabs__link">AI Systems</span>
+                        <ul class="dropdown-menu">
+                            <li><a href="/ai-systems/hub/">AI Hub</a></li>
+                            <li><a href="/ai-systems/lab/">AI Lab</a></li>
+                            <li><a href="/ai-systems/projects/">AI Projects</a></li>
+                            <li><a href="/ai-systems/projects/modern-opd-ai-system/">Modern OPD AI</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="md-tabs__item dropdown">
+                        <span class="md-tabs__link">Research & Data</span>
+                        <ul class="dropdown-menu">
+                            <li><a href="/research/insights/">Insights</a></li>
+                            <li><a href="/research/insights/the-clinical-reality/">Clinical Reality</a></li>
+                            <li><a href="/research/analysis/">Data Analysis</a></li>
+                            <li><a href="/research/surveys/">Surveys</a></li>
+                            <li><a href="/research/reports/">Research Reports</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="md-tabs__item dropdown">
+                        <span class="md-tabs__link">Knowledge Base</span>
+                        <ul class="dropdown-menu">
+                            <li><a href="/knowledge/healthtech/">HealthTech Studies</a></li>
+                            <li><a href="/knowledge/visuals/">Visual Library</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="md-tabs__item"><a href="/portfolio/" class="md-tabs__link">Portfolio</a></li>
+                    <li class="md-tabs__item"><a href="/contact/" class="md-tabs__link">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -60,6 +95,7 @@ const {
         <footer style="margin-top: 4rem; padding: 2rem 0; border-top: 1px solid var(--portfolio-line); text-align: center; color: var(--portfolio-muted);">
             <div class="md-grid">
                 <p>&copy; {new Date().getFullYear()} Dr. Sandeep Shrivastva. Built with Astro.</p>
+                <p style="font-size: 0.75rem; margin-top: 0.5rem;"><a href="/logs/" style="color: inherit; text-decoration: none; opacity: 0.6;">Build Logs</a></p>
             </div>
         </footer>
 	</body>
@@ -81,10 +117,67 @@ const {
     .md-tabs {
         background: #102a43;
         border-bottom: 1px solid rgba(255,255,255,0.1);
+        position: relative;
+        z-index: 100;
     }
     .md-grid {
         max-width: 1240px;
         margin: 0 auto;
         padding: 0 1rem;
+    }
+    .md-tabs__list {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    .md-tabs__item {
+        position: relative;
+        padding: 0.75rem 0;
+    }
+    .md-tabs__link {
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.85rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #102a43;
+        list-style: none;
+        padding: 0.5rem 0;
+        margin: 0;
+        min-width: 200px;
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 4px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .dropdown-menu li a {
+        display: block;
+        padding: 0.6rem 1.2rem;
+        color: white;
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    .dropdown-menu li a:hover {
+        background: rgba(255,255,255,0.1);
+    }
+    .dropdown .md-tabs__link::after {
+        content: '▼';
+        font-size: 0.6rem;
+        opacity: 0.7;
     }
 </style>

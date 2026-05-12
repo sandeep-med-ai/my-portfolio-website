@@ -1,0 +1,20 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import RichContentShell from '../../../components/RichContentShell.astro';
+---
+
+<Layout title="Pipeline Validation Test">
+  <RichContentShell title="Pipeline Validation Test" description="Testing controlled HTML ingestion">
+    <h2>Pipeline Validation Test Heading</h2>
+  <p>This is a test paragraph to verify the ingestion pipeline stability.</p>
+  <table>
+    <thead>
+      <tr><th>Test Col 1</th><th>Test Col 2</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Data A</td><td>Data B</td></tr>
+    </tbody>
+  </table>
+  <img src="/assets/placeholder.png" alt="Test Image Placeholder" />
+  </RichContentShell>
+</Layout>
