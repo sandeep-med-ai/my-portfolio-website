@@ -1,9 +1,0 @@
-<section class="category-hero">
-  <h1>Build Logs</h1>
-  <p>Notes from experiments, data workflows, automation builds, and learning milestones.</p>
-</section>
-
-<div class="overview-grid">
-  <a class="overview-card" href="datas-medicine/"><strong>Data and Medicine</strong><span>Observations on medical data, clinical records, and automation potential.</span></a>
-</div>
-

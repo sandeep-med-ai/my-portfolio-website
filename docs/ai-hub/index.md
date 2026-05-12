@@ -1,9 +1,0 @@
-<section class="category-hero">
-  <h1>AI Hub</h1>
-  <p>The architecture corner for RAG, agents, automation layers, and medical knowledge infrastructure.</p>
-</section>
-
-<div class="overview-grid">
-  <a class="overview-card" href="rag-architecture/"><strong>RAG Architecture</strong><span>How retrieval, knowledge bases, and LLMs can work together in healthcare.</span></a>
-</div>
-

@@ -1,0 +1,90 @@
+---
+import '../styles/custom.css';
+
+interface Props {
+	title?: string;
+    description?: string;
+}
+
+const { 
+    title = "Dr. Sandeep | AI Automation & Clinical Expert", 
+    description = "Healthcare AI, Ayurveda, automation, and clinical intelligence portfolio by Dr. Sandeep Shrivastva." 
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+        <meta name="description" content={description} />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+	</head>
+	<body>
+        <header class="md-header">
+            <div class="md-header__inner md-grid">
+                <a href="/" title="Dr. Sandeep" class="md-logo" style="text-decoration: none; color: white; font-weight: 800; font-size: 1.2rem; margin-right: 2rem;">
+                    Dr. Sandeep
+                </a>
+            </div>
+        </header>
+        <nav class="md-tabs">
+            <div class="md-tabs__inner md-grid">
+                <ul class="md-tabs__list" style="display: flex; list-style: none; margin: 0; padding: 0.5rem 0; flex-wrap: wrap; gap: 1rem;">
+                    <li class="md-tabs__item"><a href="/" class="md-tabs__link" style="color: white; text-decoration: none; font-weight: 700; font-size: 0.85rem;">Home</a></li>
+                    <li class="md-tabs__item"><a href="/ai-projects/" class="md-tabs__link" style="color: white; text-decoration: none; font-weight: 700; font-size: 0.85rem;">AI Projects</a></li>
+                    <li class="md-tabs__item"><a href="/ai-hub/" class="md-tabs__link" style="color: white; text-decoration: none; font-weight: 700; font-size: 0.85rem;">AI Hub</a></li>
+                    <li class="md-tabs__item"><a href="/clinical/" class="md-tabs__link" style="color: white; text-decoration: none; font-weight: 700; font-size: 0.85rem;">Clinical</a></li>
+                    <li class="md-tabs__item"><a href="/healthtech/" class="md-tabs__link" style="color: white; text-decoration: none; font-weight: 700; font-size: 0.85rem;">Healthtech</a></li>
+                    <li class="md-tabs__item"><a href="/insights/" class="md-tabs__link" style="color: white; text-decoration: none; font-weight: 700; font-size: 0.85rem;">Insights</a></li>
+                    <li class="md-tabs__item"><a href="/medical/" class="md-tabs__link" style="color: white; text-decoration: none; font-weight: 700; font-size: 0.85rem;">Medical</a></li>
+                    <li class="md-tabs__item"><a href="/portfolio/" class="md-tabs__link" style="color: white; text-decoration: none; font-weight: 700; font-size: 0.85rem;">Portfolio</a></li>
+                    <li class="md-tabs__item"><a href="/contact/" class="md-tabs__link" style="color: white; text-decoration: none; font-weight: 700; font-size: 0.85rem;">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main class="md-main">
+            <div class="md-main__inner md-grid">
+                <div class="md-content">
+                    <article class="md-content__inner md-typeset">
+                        <slot />
+                    </article>
+                </div>
+            </div>
+        </main>
+        <footer style="margin-top: 4rem; padding: 2rem 0; border-top: 1px solid var(--portfolio-line); text-align: center; color: var(--portfolio-muted);">
+            <div class="md-grid">
+                <p>&copy; {new Date().getFullYear()} Dr. Sandeep Shrivastva. Built with Astro.</p>
+            </div>
+        </footer>
+	</body>
+</html>
+
+<style is:global>
+    :root {
+        --md-primary-fg-color: #102a43;
+    }
+    body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+    }
+    .md-header {
+        background: var(--md-primary-fg-color);
+        color: white;
+        padding: 0.5rem 0;
+    }
+    .md-tabs {
+        background: #102a43;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .md-grid {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+</style>
